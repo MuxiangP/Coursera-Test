@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans SC', sans-serif;
+  color: #000;
+  font-size: 16px;
+}
+* a:hover, a:focus {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/** HEADER **/
+.navbar {
+  margin: 0;
+  padding: 0;
+}
+#header-nav {
+  background-color: #44C3F8;
+  border-radius: 0;
+  border-bottom: 2px solid #01477A;
+}
+.navbar-brand {
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+.navbar-brand h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5em;
+  color: #000;
+  text-align: left;
+}
+#nav-list {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+  background-color: #FDFDD7;
+}
+#nav-list li {
+  border-bottom: #050000 1px solid;
+}
+#nav-list li:nth-child(3) {
+  border-bottom: #050000 2px solid; /* thicker border needed */
+}
+#nav-list a {
+  color: #000000;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #DAFDB6;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #000000;
+}
+.navbar-toggle .icon-bar {
+  height: 6px;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -60px;
+}
+/* END HEADER */
+#menu_headline h2 {
+  font-size: 1.8em;
+  line-height: 1.8em;
+  font-weight: bold;
+}
+#menu_item {
+  background-color: #A5FBE4;
+  color: #000;
+  padding: 0 20px 20px;
+  border-radius: 10px;
+}
+#menu_item h3 {
+  font-size: 1.25em;
+  line-height: 1.25em;
+  padding-top: 15px;
+  font-weight: bold;
+}
+#menu_item a{
+  color: #000;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {}
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {}
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {}
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  #header-nav {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 {
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+    padding-left: 10px;
+  }
+  #collapsable-nav {
+    padding: 0;
+    margin: 0;
+  }
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+    color: #000;
+  }
+  #menu_item {
+    margin: 0 40px; /* adding more white space on both sides */
+  }
+}

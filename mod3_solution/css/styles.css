@@ -104,12 +104,11 @@ body {
     padding-right: 15px;
   }
   .navbar-brand {
-    padding-top: 10px;
+    padding-top: 0;
     height: 80px;
   }
   .navbar-brand h1 {
     padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
     padding-left: 10px;
   }
   #collapsable-nav {

@@ -15,7 +15,7 @@
 // See Lecture 52, part 2
 
 // function speak(name) {
-	 helloSpeaker.speak = function (name){
+	 helloSpeaker.speak = function (name){ //muxiang changed
 	  console.log(speakWord + " " + name);
 	}
 
